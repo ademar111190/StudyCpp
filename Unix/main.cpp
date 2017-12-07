@@ -3,11 +3,17 @@
 #include "sqlite3.h"
 
 #include "player.h"
+#include "continent.h"
+
+using namespace std;
 
 int main(int argc, char const *argv[]) {
-    std::srand(std::time(0) * *((int *)argv));
-    Player p = { 18 + (std::rand() % 30) };
+    srand(time(0) * *((int *)argv));
+    Player p = { 18 + (rand() % 30) };
     fprintf(stderr, "Player age: %d\n", p.age);
+
+    Continent c = { 1, "azul" };
+    fprintf(stderr, "Continent id: %d, name: %s\n", c.id, c.name.c_str());
 
     sqlite3 *inputDb;
 

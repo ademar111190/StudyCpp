@@ -1,5 +1,3 @@
 struct Player {
-
-  int age;
-
+    int age;
 };
