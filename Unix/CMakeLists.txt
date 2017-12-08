@@ -13,6 +13,7 @@ add_executable (main
   main.cpp
   ../Core/sqlite/sqlite3.c
   ../Core/repository/ContinentRepository.cpp
+  ../Core/repository/datasource/ContinentRepositoryLocal.cpp
 )
 
 install (TARGETS main DESTINATION bin)
