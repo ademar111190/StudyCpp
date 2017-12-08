@@ -1,6 +1,6 @@
 #include <vector>
 
-#include "continent.h"
+#include "Continent.h"
 #include "ContinentRepositoryCache.h"
 #include "ContinentRepositoryLocal.h"
 

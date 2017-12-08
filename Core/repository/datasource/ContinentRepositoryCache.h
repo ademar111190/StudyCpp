@@ -3,7 +3,7 @@
 
 #include <vector>
 
-#include "continent.h"
+#include "Continent.h"
 
 using namespace std;
 

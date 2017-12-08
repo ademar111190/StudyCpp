@@ -3,9 +3,10 @@ project (main)
 set (CMAKE_CXX_STANDARD 11)
 
 include_directories(
+  ../Core/sqlite
+
   ../Core/interactor
   ../Core/model
-  ../Core/sqlite
   ../Core/repository
   ../Core/repository/datasource
 )

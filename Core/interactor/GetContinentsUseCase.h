@@ -1,6 +1,6 @@
 #include <vector>
 
-#include "continent.h"
+#include "Continent.h"
 #include "ContinentRepository.h"
 
 using namespace std;
