@@ -1,14 +1,18 @@
 cmake_minimum_required(VERSION 3.10.0)
 project (main)
+set (CMAKE_CXX_STANDARD 11)
 
 include_directories(
   ../Core/model
   ../Core/sqlite
+  ../Core/repository
+  ../Core/repository/datasource
 )
 
 add_executable (main
   main.cpp
   ../Core/sqlite/sqlite3.c
+  ../Core/repository/ContinentRepository.cpp
 )
 
 install (TARGETS main DESTINATION bin)

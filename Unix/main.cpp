@@ -4,6 +4,7 @@
 
 #include "player.h"
 #include "continent.h"
+#include "ContinentRepository.h"
 
 using namespace std;
 
@@ -23,6 +24,10 @@ int main(int argc, char const *argv[]) {
         fprintf(stderr, "Opened database successfully\n");
         sqlite3_close(inputDb);
     }
+
+    ContinentRepository repository = ContinentRepository();
+    vector<Continent> continents = repository.getContinents();
+    fprintf(stderr, "%lu\n", continents.size());
 
     return 0;
 }
