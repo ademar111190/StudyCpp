@@ -1,3 +1,6 @@
+#ifndef CONTINENTREPOSITORY_H
+#define CONTINENTREPOSITORY_H
+
 #include <vector>
 
 #include "Continent.h"
@@ -20,3 +23,5 @@ public:
     vector<Continent> getContinents();
 
 };
+
+#endif // ifndef CONTINENTREPOSITORY_H

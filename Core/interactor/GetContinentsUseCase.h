@@ -1,3 +1,6 @@
+#ifndef GETCONTINENTSUSECASE_H
+#define GETCONTINENTSUSECASE_H
+
 #include <vector>
 
 #include "Continent.h"
@@ -19,3 +22,5 @@ public:
     vector<Continent> execute();
 
 };
+
+#endif // ifndef GETCONTINENTSUSECASE_H
