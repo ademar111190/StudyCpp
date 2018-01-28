@@ -1,8 +1,13 @@
 #include "ContinentsView.h"
+#include "LogUseCase.h"
 
 using namespace std;
 
 class UnixContinentsView : public ContinentsView {
+
+private:
+
+    LogUseCase log;
 
 public:
 

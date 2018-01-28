@@ -11,6 +11,7 @@ void ContinentsPresenter::attachView(ContinentsView* view) {
 }
 
 void ContinentsPresenter::start() {
+    log.d("Aqui 1\n");
     if (view) {
         view->showLoading();
         view->clearContinents();

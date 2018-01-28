@@ -4,10 +4,15 @@
 #include <vector>
 
 #include "Continent.h"
+#include "LogUseCase.h"
 
 using namespace std;
 
 class ContinentRepositoryLocal {
+
+private:
+
+    LogUseCase log;
 
 public:
 

@@ -15,14 +15,14 @@ vector<Continent>* ContinentRepositoryLocal::getContinents() {
     sqlite3* inputDb;
     sqlite3_stmt* stmt;
     if (sqlite3_open("../Database/input.db", &inputDb)) {
-        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(inputDb));
+        log.d("Can't open database: %s\n", sqlite3_errmsg(inputDb));
     } else {
-        fprintf(stderr, "Opened database successfully\n");
+        log.d("Opened database successfully\n");
         const char* query = "SELECT `id`, `name` FROM continent;";
         char* error = NULL;
         int resultCode = sqlite3_prepare_v2(inputDb, query, -1, &stmt, NULL);
         if (resultCode != SQLITE_OK) {
-            fprintf(stderr, "Can't read database %d\n", resultCode);
+            log.d("Can't read database %d\n", resultCode);
         }
         while ((resultCode = sqlite3_step(stmt)) == SQLITE_ROW) {
             Continent c = {

@@ -1,12 +1,14 @@
 cmake_minimum_required(VERSION 3.10.0)
 project (main)
-set (CMAKE_CXX_STANDARD 11)
+set (CMAKE_CXX_STANDARD 14)
 
 include_directories(
+  contract
   view
 
   ../Core/sqlite
 
+  ../Core/contract
   ../Core/interactor
   ../Core/model
   ../Core/presenter
@@ -17,6 +19,7 @@ include_directories(
 
 add_executable (main
   main.cpp
+  contract/LogUseCase.cpp
   view/UnixContinentsView.cpp
 
   ../Core/sqlite/sqlite3.c
