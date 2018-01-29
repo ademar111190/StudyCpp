@@ -1,6 +1,6 @@
-#include "LogUseCase.h"
+#include "LogContract.h"
 
-void LogUseCase::d(const char* format, ...) {
+void LogContract::d(const char* format, ...) {
     va_list args;
     va_start(args, format);
     fprintf(stderr, format, args);

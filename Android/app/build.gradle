@@ -51,3 +51,10 @@ dependencies {
     implementation "com.android.support:appcompat-v7:27.0.2"
     testImplementation "junit:junit:4.12"
 }
+
+task copyFiles(type: Copy) {
+    from '../../Database/input.db'
+    into 'src/main/assets'
+}
+
+preBuild.dependsOn(copyFiles)

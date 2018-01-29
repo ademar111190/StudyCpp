@@ -1,5 +1,5 @@
 #include "ContinentsView.h"
-#include "LogUseCase.h"
+#include "LogContract.h"
 
 using namespace std;
 
@@ -7,7 +7,7 @@ class UnixContinentsView : public ContinentsView {
 
 private:
 
-    LogUseCase log;
+    LogContract log;
 
 public:
 

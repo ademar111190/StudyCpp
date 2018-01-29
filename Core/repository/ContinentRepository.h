@@ -6,7 +6,7 @@
 #include "Continent.h"
 #include "ContinentRepositoryCache.h"
 #include "ContinentRepositoryLocal.h"
-#include "LogUseCase.h"
+#include "LogContract.h"
 
 using namespace std;
 
@@ -14,7 +14,7 @@ class ContinentRepository {
 
 private:
 
-    LogUseCase log;
+    LogContract log;
     ContinentRepositoryLocal local;
 
 public:

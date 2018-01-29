@@ -21,9 +21,9 @@ class ContinentsActivity : AppCompatActivity() {
         destroy()
     }
 
-    external fun attachView()
-    external fun start()
-    external fun destroy()
+    private external fun attachView()
+    private external fun start()
+    private external fun destroy()
 
     companion object {
 

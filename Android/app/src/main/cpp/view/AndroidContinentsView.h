@@ -1,6 +1,6 @@
 #include <jni.h>
 #include "ContinentsView.h"
-#include "LogUseCase.h"
+#include "LogContract.h"
 
 using namespace std;
 
@@ -9,7 +9,7 @@ class AndroidContinentsView : public ContinentsView {
 private:
 
     jobject thiz;
-    LogUseCase log;
+    LogContract log;
 
 public:
 

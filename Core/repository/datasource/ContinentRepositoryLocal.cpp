@@ -14,7 +14,8 @@ vector<Continent>* ContinentRepositoryLocal::getContinents() {
     vector<Continent>* continents = new vector<Continent>();
     sqlite3* inputDb;
     sqlite3_stmt* stmt;
-    if (sqlite3_open("../Database/input.db", &inputDb)) {
+    log.d("trying to open %s\n", path.inputDatabase());
+    if (sqlite3_open(path.inputDatabase(), &inputDb)) {
         log.d("Can't open database: %s\n", sqlite3_errmsg(inputDb));
     } else {
         log.d("Opened database successfully\n");

@@ -4,7 +4,8 @@
 #include <vector>
 
 #include "Continent.h"
-#include "LogUseCase.h"
+#include "LogContract.h"
+#include "PathContract.h"
 
 using namespace std;
 
@@ -12,7 +13,8 @@ class ContinentRepositoryLocal {
 
 private:
 
-    LogUseCase log;
+    LogContract log;
+    PathContract path;
 
 public:
 

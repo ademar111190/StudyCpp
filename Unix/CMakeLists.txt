@@ -19,7 +19,8 @@ include_directories(
 
 add_executable (main
   main.cpp
-  contract/LogUseCase.cpp
+  contract/LogContract.cpp
+  contract/PathContract.cpp
   view/UnixContinentsView.cpp
 
   ../Core/sqlite/sqlite3.c

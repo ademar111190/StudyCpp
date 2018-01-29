@@ -3,7 +3,7 @@
 #include "Continent.h"
 #include "ContinentsView.h"
 #include "GetContinentsUseCase.h"
-#include "LogUseCase.h"
+#include "LogContract.h"
 
 using namespace std;
 
@@ -11,7 +11,7 @@ class ContinentsPresenter {
 
 private:
 
-    LogUseCase log;
+    LogContract log;
     GetContinentsUseCase getContinents;
     ContinentsView* view;
 

@@ -31,5 +31,5 @@ void AndroidContinentsView::clearContinents() {
 }
 
 void AndroidContinentsView::bindContinent(Continent continent) {
-    log.d("bindContinent\n");
+    log.d("bindContinent %d %s\n", continent.id, continent.name.c_str());
 }

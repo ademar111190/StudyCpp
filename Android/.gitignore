@@ -6,3 +6,6 @@ local.properties
 build
 captures
 .externalNativeBuild
+
+# Copied files by gradle script
+app/src/main/assets/input.db
